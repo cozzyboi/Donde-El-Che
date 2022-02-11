@@ -9,26 +9,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-
+    
     <section class="header">
         <nav>
-         <img src="images/Logo horizontal.png">
-         <div class="nav-links"> 
-          <ul>
+         <img src="images/logo horizontal.svg">
+         <div class="nav-links" id="navLinks"> 
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
 
             <li><a href="home.html">Home</a></li>
-            <li><a href="">Menu</a></li>
+            <li><a href="#primero">Carta</a></li>
             <li><a href="">Sobre nosotros</a></li>
             <li><a href="">Contacto</a></li>
             
           </ul>
          </div> 
+         <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
-    </header>
+    </section>
+
+ <div class="text-box">
+    <img class="borde" src="images/Decodivision.svg">
+    <h1> Misión</h1>
+    <p>Somos una familia que celebra y busca constantemente recoger nuestra generosa gastronomía peruana,<br> la cual reflejamos en nuestra carta como en nuestras porciones, porque somos conscientes que el orgullo peruano <br> siempre se debe servir en plato grande.</p>
+    <a href="" class="marco-contacto">Contáctanos para conocer más</a>
+    <br><img class="borde1" src="images/Decodivision.svg">
+ </div>
+ 
+ <!--La misión del restaurante y lo que busca-->
+    <section class="Carta">
+        <h1 id="primero">Carta</h1>
+        <p>
+            Somos una familia que celebra y busca constantemente recoger nuestra generosa gastronomía peruana, la cual reflejamos en nuestra carta como en nuestras porciones, porque somos conscientes que el orgullo peruano siempre se debe servir en plato grande.</p>
+
+    </section>
+
+<!--JavaScript para el menú lateral en responsive mode-->
+<script>
+
+    var navLinks= document.getElementById("navLinks");
+
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
 
 
-    
+
+</script>    
 </body>
 </html>
