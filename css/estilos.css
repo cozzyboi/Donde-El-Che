@@ -127,6 +127,7 @@ nav .fa{
     font-size: 20px;
     color: #2e2e2e;
     text-align: center;
+    
 }
 
 .column {
@@ -143,22 +144,16 @@ nav .fa{
 
 .row{
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
 }
 
 .column{
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}  
-
-.column img{
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+    flex: 33.33%;
+    padding: 5px;
 }
 
+.gatito{
+    margin-top: -6000px;
+}
 
 @media(max-width:700px){
     .text-box h1{
