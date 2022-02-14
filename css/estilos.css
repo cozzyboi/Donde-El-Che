@@ -4,13 +4,15 @@
     font-family: 'Anton', sans-serif;
 }
 
+/* Para el background*/
+
 body {
     background-image: url("images/fondoweb.svg");
     background-size: cover;
      position: relative;
   }
  
- .header{
+ .cabecera{
      min-height: 100vh;
      width: 100%;
      background-image: linear-gradient(#f3ede1, #f3ede1) url("images/fondoweb.svg");
@@ -54,7 +56,7 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.text-box{
+.Saludo{
     width: 90%;
     color: #2e2e2e;
     position: absolute;
@@ -62,22 +64,26 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    margin-top: -200px;
 }
-.text-box h1{
+
+/* Comienza el bloque del saludo*/
+
+.Saludo h1{
     font-size: 60px;
     letter-spacing: 3px
 }
-.text-box p{
+.Saludo p{
     margin: 10px 0 40px;
     font-size: 20px;
     color: #2e2e2e;
 }
-.text-box .borde{
+.Saludo .borde{
     background: transparent;
     width: 55rem;
     margin: -8px auto;
 }
-.text-box .borde1{
+.Saludo .borde1{
     background: transparent;
     width: 55rem;
     margin: 50px auto;
@@ -104,44 +110,96 @@ nav .fa{
     display: none;
 }
 
-@media(max-width:700px){
-  .text-box h1{
-    font-size: 25px;
-   }
-   .nav-links ul li{
-        display: block;
-   }
-   .nav-links{
-        position:absolute;
-        background: #EC8421;
-        height: 100vh;
-        width:200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
+/* Comienza la parte de la Carta*/
 
-   }
-   nav .fa{
-    display: block;
+.Carta h1{
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: -20px;
     color: #2e2e2e;
-    margin: 25px;
-    font-size: 25px;
-    cursor: pointer;
-   }
-  .nav-links ul{
-      padding: 30px;
-  }
-  .text-box .borde{
-    background: transparent;
-    width: 20rem;
-    margin: 25px auto;
-}
-.text-box .borde1{
-    background: transparent;
-    width: 20rem;
-    margin: 50px auto;
-}
+    
 }
 
+.Carta p{
+
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5%;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}  
+
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+@media(max-width:700px){
+    .text-box h1{
+      font-size: 25px;
+     }
+     .nav-links ul li{
+          display: block;
+     }
+     .nav-links{
+          position:absolute;
+          background: #EC8421;
+          height: 100vh;
+          width:200px;
+          top: 0;
+          right: -200px;
+          text-align: left;
+          z-index: 2;
+          transition: 1s;
+  
+     }
+     nav .fa{
+      display: block;
+      color: #2e2e2e;
+      margin: 25px;
+      font-size: 25px;
+      cursor: pointer;
+     }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .saludo .borde{
+      background: transparent;
+      width: 3rem;
+      margin: 25px auto;
+  }
+  .saludo .borde1{
+      background: transparent;
+      width: 3rem;
+      margin: 50px auto;
+  }
+  .column {
+    width: 100%;
+  }
+  }
